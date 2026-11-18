@@ -1,0 +1,8 @@
+{
+  "selected_candidate": "momentum_63_skip5__equal",
+  "selection_metric": "daily net Sharpe, 252-day annualization",
+  "information_cutoff": "2014-12-31",
+  "one_way_cost_bps": 10.0,
+  "protocol_sha256": "76e3ce91e6d50ceefd53ab05a48128539217441e8776153ea378b3f2e84d51a8",
+  "selection_scope": "2005-2014 validation returns only; holdout not scored yet"
+}

@@ -1,0 +1,61 @@
+{
+  "design": {
+    "study": "Separate fresh-seed null-size audit of fixed-scale and studentized family tests",
+    "status": "Frozen before evaluation of this fresh seed bank; motivated by exploratory reviewer diagnostics",
+    "preserves_primary_empirical_inference": true,
+    "sample_sizes": [
+      500,
+      2766
+    ],
+    "candidates": 6,
+    "outer_trials": 1000,
+    "bootstrap_replicates": 499,
+    "block_length": 21,
+    "hac_lags": 21,
+    "ar": 0.2,
+    "correlation": 0.35,
+    "burn": 200,
+    "alpha": 0.05,
+    "dataset_seed_base": 2026111800,
+    "bootstrap_seed_base": 2036111800,
+    "methods": [
+      "original_fixed_scale",
+      "within_bootstrap_HAC_studentized",
+      "known_Gaussian_covariance_oracle"
+    ],
+    "pairing": "Same datasets and stationary indices across bootstrap methods; same trial addresses across sample sizes; do not pool sample-size cells",
+    "oracle": "Exact equicorrelated Gaussian maximum cutoff by quadrature and finite-n stationary AR mean variance",
+    "uncertainty": "Wilson 95% binomial intervals per method; paired normal interval for studentized-minus-fixed rejection rate",
+    "selection": "No method selection, no primary-result substitution, no block/HAC tuning; retain all outcomes",
+    "scope": "Gaussian zero-mean six-candidate null only; does not establish uniform size control for 13 empirical portfolios, nonstationarity or heavy tails",
+    "runtime_choice": "499 inner replicates and 1000 outer trials fixed after a timing-only benchmark, before fresh-seed outcomes; primary empirical run retains 2000 replicates",
+    "pre_execution_review": "Seed banks separated by 10000000 after reviewer detected overlap in draft addresses; corrected before any fresh audit outcome"
+  },
+  "protocol_sha256": "85c7a7c0c3098c34557384e42681c4363b683fd48a19de89d1bd705b05f12b4b",
+  "timestamp_utc": "2026-11-18T05:28:43.796921+00:00",
+  "runtime_seconds": 989.0695221250062,
+  "known_gaussian_max_cutoff": 2.3376177830330453,
+  "source_sha256": {
+    "bootstrap_audit.py": "191b76ce0a3e4697a42ddfc339d6af2377d57bcc59698ff3ac5b14c5ef90766a",
+    "inference.py": "6c587c0ef62ca52f8da723ffcb131055cc5bfece83b49ea6c9629aee979a875a"
+  },
+  "artifact_sha256": {
+    "summary.csv": "cd0302a38a3ff14f9109552815aecc8ac678bb6c56c8c06b1d537ab07a83d84e",
+    "trials.csv": "30c1f64df62a11b6ac81db609cbf34938b559b3dc20782fae4f57febd9ba6d6b",
+    "bootstrap_size.png": "93b2e1a774cc60f111eb69e4debcd514b33f18b513b51682996d812ab39933f2",
+    "report.md": "268e6e72eab89aa0d6d36ba850c6b9266c2ef9946dca6111c106b381e55f649c",
+    "paired_differences.csv": "25e91eb29478079bbf6ac822e9356abdeec3e44701d0e1992de413177e26078a",
+    "empirical_comparison.json": "96b8fa4eda327c1884d4dc5f27325a27e695d0428cc5c2cb2af8269590818d02"
+  },
+  "rendering": {
+    "script_sha256": "f97e7f8c9aa0ebffb9d6e2a0789ab4386f246ead8fa7dc8bf913c7f112653559",
+    "empirical_input_sha256": "0b7e86754f2b03069653a52dfc7fc9edd3d19601a47ea7fa5701295d23e9905e",
+    "empirical_protocol_sha256": "f77c92c9829e05c7898710403d147b7216f70f90f6e97a71cd7d0ea1646b2b4d"
+  },
+  "presentation_revision": {
+    "date": "2026-11-18",
+    "scope": "Introductory report prose only; all numerical calculations, retained data and figures unchanged.",
+    "prior_rendering_script_sha256": "04e257b530be078f48bcafbc8e40942f26c196cf2e9722c69fa45dcb2048288a",
+    "prior_report_sha256": "66866d73951da62123ed5df72ffe3cfb7a7c89fc67fb9e216a029e54e954fdc1"
+  }
+}

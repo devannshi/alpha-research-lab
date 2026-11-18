@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mplconfig/
+.ipynb_checkpoints/
+.DS_Store
+build/
+dist/
+data/raw/
+results/quick/
+results/reproduced/
+results/revised-vintage/
+

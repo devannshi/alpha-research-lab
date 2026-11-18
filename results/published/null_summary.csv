@@ -1,0 +1,5 @@
+method,false_positive_rate,lower,upper,replicates
+prespecified_single_reject,0.05,0.0381302623927,0.0653138202443,1000
+naive_reject,0.65,0.619914682507,0.678937289948,1000
+bonferroni_reject,0.054,0.0416213137231,0.0697921548461,1000
+known_null_max_reject,0.049,0.0372610346474,0.0641907015066,1000

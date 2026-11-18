@@ -1,0 +1,4 @@
+mean_block_length,replicates,global_family_p,frozen_winner_adjusted_p
+5,2000,0.803098450775,1
+21,2000,0.792103948026,1
+63,2000,0.811094452774,1

@@ -1,0 +1,16 @@
+{
+  "study": "Mandatory paired empirical comparison accompanying null-size audit",
+  "status": "Recorded while the fresh audit was running, before any audit rejection counts were inspected and before studentized empirical evaluation",
+  "input": "results/published/candidate_daily.csv.gz",
+  "period": "holdout",
+  "candidate_family": "All 13 original procedures, alphabetically ordered",
+  "observations": 2766,
+  "bootstrap_replicates": 2000,
+  "block_length": 21,
+  "hac_lags": 21,
+  "seed": 20261117,
+  "comparison": "Original fixed-scale versus within-bootstrap HAC-studentized maximum on identical resamples",
+  "reporting_rule": "Report both regardless of null-size outcomes or p-value ordering; do not replace original primary inference",
+  "numeric_boundary": "Reconstruct from retained 12-significant-digit daily return ledger; verify original fixed-scale p against published manifest",
+  "claim": "Secondary robustness comparison, not a retrospectively corrected primary analysis"
+}

@@ -1,0 +1,12 @@
+{
+  "replicates": 1000,
+  "candidates": 50,
+  "observations": 756,
+  "ar_coefficient": 0.2,
+  "cross_candidate_correlation": 0.35,
+  "calibration_replicates": 2000,
+  "naive_cutoff": 1.6448536269514729,
+  "bonferroni_cutoff": 3.090232306167813,
+  "known_null_max_cutoff": 3.2386629876514803,
+  "calibration_and_evaluation_rng_streams": "independent SeedSequence children"
+}

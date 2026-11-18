@@ -1,0 +1,38 @@
+{
+  "fixed_scale_p": 0.792103948025987,
+  "studentized_p": 0.7861069465267366,
+  "observed_max": 0.5860807916912798,
+  "protocol": {
+    "study": "Mandatory paired empirical comparison accompanying null-size audit",
+    "status": "Recorded while the fresh audit was running, before any audit rejection counts were inspected and before studentized empirical evaluation",
+    "input": "results/published/candidate_daily.csv.gz",
+    "period": "holdout",
+    "candidate_family": "All 13 original procedures, alphabetically ordered",
+    "observations": 2766,
+    "bootstrap_replicates": 2000,
+    "block_length": 21,
+    "hac_lags": 21,
+    "seed": 20261117,
+    "comparison": "Original fixed-scale versus within-bootstrap HAC-studentized maximum on identical resamples",
+    "reporting_rule": "Report both regardless of null-size outcomes or p-value ordering; do not replace original primary inference",
+    "numeric_boundary": "Reconstruct from retained 12-significant-digit daily return ledger; verify original fixed-scale p against published manifest",
+    "claim": "Secondary robustness comparison, not a retrospectively corrected primary analysis"
+  },
+  "candidates": [
+    "adaptive_selector",
+    "momentum_126_skip21__equal",
+    "momentum_126_skip21__inverse_volatility",
+    "momentum_252__equal",
+    "momentum_252__inverse_volatility",
+    "momentum_252_skip21__equal",
+    "momentum_252_skip21__inverse_volatility",
+    "momentum_63_skip5__equal",
+    "momentum_63_skip5__inverse_volatility",
+    "reversal_21__equal",
+    "reversal_21__inverse_volatility",
+    "reversal_5__equal",
+    "reversal_5__inverse_volatility"
+  ],
+  "input_sha256": "0b7e86754f2b03069653a52dfc7fc9edd3d19601a47ea7fa5701295d23e9905e",
+  "protocol_sha256": "f77c92c9829e05c7898710403d147b7216f70f90f6e97a71cd7d0ea1646b2b4d"
+}
